@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
-import ImgNotSelected from './components/ImgNotSelected'
-ImgNotSelected
+
 import ImgContainer from './components/ImgContainer'
+import ImgNotSelected from './components/ImgNotSelected'
 
 
 function App() {

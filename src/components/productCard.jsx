@@ -1,4 +1,6 @@
-import ProductCardBtn from "./ProductCardBTn"
+import ProductCardBtn from "./ProductCardBtn"
+
+
 
 function ProductCard({product}){
     return <>
