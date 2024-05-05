@@ -4,7 +4,7 @@ import ImgContainer from './components/imgContainer'
 
 function App() {
   const [products, setProducts] = useState([])
-  const [isActiveProduct, setIsActiveProduct] = useState(false)
+  const [activeProduct, setActiveProduct] = useState(false)
 
   useEffect(() => {
     fetch("./src/data/products.json")
@@ -22,7 +22,7 @@ function App() {
     <>
       <main className='container'>
         {
-          isActiveProduct ? <></> : <ImgNotSelected/>
+          activeProduct ? <></> : <ImgNotSelected/>
         }
         <ImgContainer products={products}></ImgContainer>
       </main>
