@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
-import ImgNotSelected from './components/imgNotSelected'
-import ImgContainer from './components/imgContainer'
+import ImgNotSelected from './components/ImgNotSelected'
+ImgNotSelected
+import ImgContainer from './components/ImgContainer'
+
 
 function App() {
   const [products, setProducts] = useState([])
@@ -22,7 +24,7 @@ function App() {
     <>
       <main className='container'>
         {
-          activeProduct ? <></> : <ImgNotSelected/>
+          activeProduct ? <h1>{activeProduct.name}</h1> : <ImgNotSelected/>
         }
         <ImgContainer products={products}></ImgContainer>
       </main>
